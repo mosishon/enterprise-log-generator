@@ -47,14 +47,16 @@ NUM_NETWORK_DEVICES = 10
 NUM_WEB_SERVERS = 5
 NUM_CLIENT_DEVICES = 20
 
-# تنظیمات Splunk
+# تنظیمات Splunk HTTP Event Collector (HEC)
 SPLUNK_HEC_URL = "http://127.0.0.1:8088/services/collector"
-SPLUNK_TOKEN = "your-splunk-token-here"
+SPLUNK_TOKEN = "your-splunk-hec-token-here"
 
 # تنظیمات تولید لاگ
 LOG_INTERVAL = 0.1  # ثانیه
 CORRELATED_EVENT_PROBABILITY = 0.3  # احتمال رویدادهای مرتبط (30%)
 ```
+
+**نکته:** برای استفاده از این سیستم، باید HTTP Event Collector (HEC) را در Splunk فعال کنید و یک HEC Token ایجاد کنید. HEC یک روش ساده و امن برای ارسال داده‌ها به Splunk از طریق HTTP/HTTPS است که برای یادگیری و تست ایده‌آل است.
 
 ### اجرا
 
